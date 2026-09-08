@@ -12,14 +12,10 @@ export function SiteHeader() {
 
   return (
     <header className="site-header" id="top">
-      <div className="shell header-inner">
+      <div className="shell header-inner glass-panel">
         <a className="wordmark" href="#top" aria-label="Chuanwei 首页">Chuanwei<span>.</span></a>
-        <button
-          className="icon-button theme-button"
-          type="button"
-          aria-label={darkMode ? '切换浅色模式' : '切换深色模式'}
-          onClick={() => setDarkMode((value) => !value)}
-        >
+        <p className="header-note">DESIGN · CODE · NOTES</p>
+        <button className="icon-button theme-button" type="button" aria-label={darkMode ? '切换浅色模式' : '切换深色模式'} onClick={() => setDarkMode((value) => !value)}>
           {darkMode ? <Sun size={19} aria-hidden="true" /> : <Moon size={19} aria-hidden="true" />}
         </button>
       </div>
