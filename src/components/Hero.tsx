@@ -16,7 +16,6 @@ export function Hero() {
           <a className="round-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="访问 GitHub"><ArrowUpRight size={20} aria-hidden="true" /></a>
         </div>
       </aside>
-      <p className="scroll-hint">SCROLL CAREFULLY <span>慢慢向下</span></p>
     </section>
   )
 }

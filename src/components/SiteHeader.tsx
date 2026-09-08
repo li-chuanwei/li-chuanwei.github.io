@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useLayoutEffect, useState } from 'react'
 import { Moon, Sun } from 'reicon-react'
 
 export function SiteHeader() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark')
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') !== 'light')
 
-  useEffect(() => {
-    // 将主题同步到根节点，并记住访问者的选择。
+  useLayoutEffect(() => {
+    // 默认使用深色主题；访问者主动选择浅色后仍保留其偏好。
     document.documentElement.dataset.theme = darkMode ? 'dark' : 'light'
     localStorage.setItem('theme', darkMode ? 'dark' : 'light')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', darkMode ? '#0B2225' : '#FCF9E8')
   }, [darkMode])
 
   return (

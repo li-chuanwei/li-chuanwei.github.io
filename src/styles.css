@@ -73,10 +73,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .hero-orbit i { position: absolute; inset: 0; border: 1px solid rgb(65 187 200 / 26%); border-radius: 42% 58% 55% 45% / 51% 44% 56% 49%; animation: orbit 18s linear infinite; }
 .hero-orbit i:nth-child(2) { inset: 13%; animation-direction: reverse; animation-duration: 13s; }
 .hero-orbit i:nth-child(3) { inset: 29%; background: rgb(65 187 200 / 8%); animation-duration: 9s; }
-.scroll-hint { position: absolute; bottom: 28px; left: 0; display: flex; align-items: center; gap: 14px; margin: 0; color: var(--muted); font: 9px var(--mono); letter-spacing: .13em; writing-mode: vertical-rl; }
-.scroll-hint::after { width: 1px; height: 42px; background: var(--accent); content: ''; }
-.scroll-hint span { color: var(--ink); }
-
 .section-head { display: grid; grid-template-columns: 90px 1fr; align-items: end; margin-bottom: 38px; }
 .section-index { color: var(--accent); font: italic 54px/1 var(--serif); }
 .section-head h2 { margin: 8px 0 0; font: clamp(3.2rem, 6vw, 6rem)/.9 var(--serif); font-weight: 400; letter-spacing: -.06em; }
@@ -136,7 +132,6 @@ footer { padding-bottom: 12px; }
   .intro h1 { font-size: clamp(4.4rem, 20vw, 7rem); }
   .intro-card { width: min(100%, 420px); margin-left: auto; }
   .hero-orbit { top: 3%; right: -22%; width: 78vw; }
-  .scroll-hint { display: none; }
   .section-head, .about .section-head { grid-template-columns: 56px 1fr; }
   .section-index { font-size: 38px; }
   .blog { padding: 90px 0 110px; }
