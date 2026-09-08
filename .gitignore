@@ -12,6 +12,7 @@ dist/
 coverage/
 
 # 编辑器与操作系统文件
+.codex/
 .idea/
 .vscode/
 *.suo
