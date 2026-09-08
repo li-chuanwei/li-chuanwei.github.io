@@ -1,1 +1,33 @@
-.gitignore
+# 依赖与构建产物
+node_modules/
+dist/
+.vite/
+
+# 本地环境变量（示例文件可提交）
+.env
+.env.*
+!.env.example
+
+# 测试与覆盖率
+coverage/
+
+# 编辑器与操作系统文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# 日志与包管理器调试文件
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript 增量缓存
+*.tsbuildinfo

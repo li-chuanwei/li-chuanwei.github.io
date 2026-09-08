@@ -1,0 +1,46 @@
+schema: spec-driven
+
+context: |
+  项目使用 Vite、React 与 TypeScript 构建个人主页。
+  包管理器统一使用 pnpm，Windows 环境下命令使用 .cmd 后缀。
+  UI 图标统一使用 reicon-react，代码包含必要的中文注释。
+  变更应保持最小范围，提交信息使用中文，未经明确要求不推送远程。
+
+rules:
+  proposal:
+    - 使用中文描述目标、范围与非目标
+    - 明确列出用户可验证的验收标准
+  tasks:
+    - 使用中文拆分可独立验证的任务
+    - 每个任务应包含对应的验证方式
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
